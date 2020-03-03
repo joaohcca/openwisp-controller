@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ '*' ]
 
 DATABASES = {
     'default': {
@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_gis',
     # channels
+    'openwisp_ipam'
+    'DeviceIP.app.BaseConfig'
     'channels'
 ]
 
